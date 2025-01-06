@@ -1,17 +1,164 @@
-.single_conversation{
+/*.single_conversation{*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+
+/*}*/
+/*.title-section{*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*}*/
+/*.title{*/
+/*    color:#3b4e69;*/
+/*}*/
+/*.sub-title{*/
+/*    width: 100%;*/
+/*}*/
+
+.single_conversation {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 900px;
+    margin: 150px auto;
+    height: 69vh;
 }
-.title-section{
+
+.title-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 24px;
+    color: #3b4e69;
+    margin: 0;
+}
+
+.sub-title {
+    font-size: 14px;
+    color: #7b7b7b;
+    margin-top: 5px;
+}
+
+.conversion-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    margin: 20px 0;
+    height: auto;
+}
+
+.conversion-box {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    width: 48%;
 }
-.title{
-    color:#3b4e69;
+
+.label {
+    font-size: 14px;
+    color: #7b7b7b;
+    margin-bottom: 5px;
 }
-.sub-title{
+
+.input-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     width: 100%;
+}
+
+.input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #333;
+}
+
+.dropdown {
+    width: 120px;
+}
+
+.switch-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #3b4e69;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 10px auto;
+}
+
+.exchange-rate {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.rate {
+    font-size: 18px;
+    color: #3b4e69;
+    font-weight: bold;
+}
+
+
+/* Remove border and background of the dropdown control */
+.Dropdown-control {
+    background: transparent !important;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important; /* Remove shadow if present */
+    color: #333 !important; /* Set text color */
+    font-size: 16px !important;
+    cursor: pointer !important;
+}
+
+/* Remove the dropdown arrow */
+.Dropdown-arrow {
+    display: none !important;
+}
+
+/* Dropdown menu styling */
+.Dropdown-menu {
+    background: transparent !important;
+    border: none;
+    box-shadow: none;
+}
+
+/* Placeholder text */
+.Dropdown-placeholder {
+    color: #333 !important;
+    font-size: 14px !important;
+}
+
+/* Dropdown option list styling */
+.Dropdown-option {
+    background: transparent !important;
+    color: #333 !important;
+    padding: 8px 12px !important;
+    border: none !important;
+    cursor: pointer !important;
+}
+
+.Dropdown-option:hover {
+    background: #f1f1f1 !important;
+    color: #333 !important;
+}
+
+.Dropdown-option.is-selected {
+    background: #e8e8e8 !important;
+    color: #333 !important;
 }
