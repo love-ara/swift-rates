@@ -1,0 +1,41 @@
+.HomePage{
+    margin: 75px auto;
+    width: 80vw;
+    text-align: center;
+}
+
+.HomePage-header{
+    text-align: center;
+    color: #464985;
+    margin: 25px auto;
+}
+
+.HomePage-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    /*width: 100%;*/
+    width: fit-content;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.box{
+    /*background-color: #fbebe7;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+    padding: 90px;
+    /*margin-top: 20px;*/
+    background-color: #fbebe7;
+    width: 150px;
+    /*height: 150px;*/
+    color: #464985;
+    font-size: 18px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}

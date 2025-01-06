@@ -1,7 +1,7 @@
 import "./index.css"
 import { Outlet, Link } from "react-router-dom";
 import Footer from "../Footer";
-import Header from "../Header";
+import Header from "../Navbar";
 
 const Layout = () => {
     return (

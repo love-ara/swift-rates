@@ -3,7 +3,9 @@ import "./index.css"
 const Header = () =>{
     return (
         <>
-        Navbar here!
+            <header className="Header">
+                <h1>Swift Rates</h1>
+            </header>
         </>
     )
 };
