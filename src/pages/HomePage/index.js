@@ -1,4 +1,5 @@
 import './index.css';
+import {Link} from "react-router-dom";
 
 function HomePage() {
     return (
@@ -7,18 +8,18 @@ function HomePage() {
                 Welcome to Swift Rates,<br/> a solution for your currency conversion problem!
             </header>
             <main className="HomePage-content">
-                <div className="box">
+                <Link to="/convert-currency" className="box">
                     Convert Currency
-                </div>
-                <div className="box">
+                </Link>
+                <Link to="/multi-currency" className="box">
                     Multi-Currency Conversion
-                </div>
-                <div className="box">
+                </Link>
+                <Link to="/rate-comparison" className="box">
                     Rate Comparison
-                </div>
-                <div className="box">
+                </Link>
+                <Link to="/favorites" className="box">
                     Favorites
-                </div>
+                </Link>
             </main>
         </div>
     );
