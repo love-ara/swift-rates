@@ -15,7 +15,9 @@ function App() {
                   <Route path="*" element={<NoPage />} />
               </Route>
               <Route path="/convert-currency" element={<SingleConverter/>}/>
-
+              <Route path="/multi-currency" element={<NoPage/>}/>
+              <Route path="/rate-comparison" element={<NoPage/>}/>
+              <Route path="/favorites" element={<NoPage/>}/>
 
           </Routes>
       </BrowserRouter>

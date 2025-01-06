@@ -1,0 +1,17 @@
+.single_conversation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.title-section{
+    display: flex;
+    flex-direction: column;
+}
+.title{
+    color:#3b4e69;
+}
+.sub-title{
+    width: 100%;
+}
