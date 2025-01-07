@@ -3,21 +3,31 @@ import { useEffect, useState } from "react";
 import Axios from "axios";
 import Dropdown from "react-dropdown";
 import { HiSwitchVertical } from "react-icons/hi";
-import 'react-dropdown/style.css';
-
+import "react-dropdown/style.css";
 
 const SingleConverter = () => {
     const [info, setInfo] = useState([]);
     const [from, setFrom] = useState("ngn");
     const [to, setTo] = useState("usd");
     const [options, setOptions] = useState([]);
-    const [output, setOutput] = useState(0);
-    const [input, setInput] = useState(0);
+    const [output, setOutput] = useState("");
+    const [input, setInput] = useState("");
 
-    function convert() {
+    // function convert() {
+        // const rate = info[to];
+        // if (!isNaN(input)) {
+        //     setOutput((parseFloat(input) * rate).toFixed(4));
+        // } else {
+        //     setOutput("");
+        // }
+
+    // }
+
+    function convert(currentInput = input) {
         const rate = info[to];
-        setOutput((input * rate).toFixed(2));
+        setOutput((currentInput * rate).toFixed(2));
     }
+
 
     function flip() {
         const temp = from;
@@ -36,7 +46,23 @@ const SingleConverter = () => {
     useEffect(() => {
         setOptions(Object.keys(info));
         convert();
-    }, [info]);
+    }, [info, input]);
+
+    const handleInputChange = (e) => {
+        const value = e.target.value;
+        const numericValue = value.replace(/\D/g, '');
+
+        if (!isNaN(value)) {
+            setInput(value);
+        } else {
+            setInput(numericValue);
+            setOutput("0.00");
+        }
+
+        // const value = e.target.value;
+        // setInput(value);
+        // convert(value);
+    };
 
     return (
         <div className="single_conversation">
@@ -59,15 +85,26 @@ const SingleConverter = () => {
                         />
                         <input
                             type="text"
-                            // placeholder="1000.00"
                             className="input"
-                            onChange={(e) => setInput(e.target.value)}
+                            value={input}
+                            onChange={handleInputChange}
                         />
                     </div>
                 </div>
 
-                <div className="switch-box" onClick={flip}>
-                    <HiSwitchVertical size="30px" className="switch-icon" />
+                {/*<hr className="separator"/>*/}
+
+                {/*<div className="switch-box" onClick={flip}>*/}
+
+                {/*    <HiSwitchVertical size="30px" className="switch-icon"/>*/}
+                {/*</div>*/}
+
+
+                {/*<hr className="separator"/>*/}
+                <div className="switch-box">
+                    <hr className="separator"/>
+                    <HiSwitchVertical size="30px" className="swap-icon" onClick={flip}/>
+                    <hr className="separator"/>
                 </div>
 
 
@@ -86,14 +123,13 @@ const SingleConverter = () => {
                                 border: "none",
                                 backgroundColor: "transparent",
                             }}
-
                         />
                         <input
                             type="text"
                             className="input"
                             value={output}
-                            readOnly
-                            // placeholder=""
+                            // readOnly
+                            placeholder={to}
                         />
                     </div>
                 </div>
