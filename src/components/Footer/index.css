@@ -1,0 +1,9 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: transparent;
+    /*padding: 50px 50px 50px 50px;*/
+    gap: 20%;
+}

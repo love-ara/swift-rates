@@ -1,5 +1,5 @@
 import "./index.css"
-import { Outlet, Link } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import Footer from "../Footer";
 import Header from "../Navbar";
 
@@ -7,11 +7,17 @@ const Layout = () => {
     return (
         <>
             <div className="layout-container">
-                <Header/>
+                <div className="header">
+                    <Header/>
+
+                </div>
                 <main className="layout-main">
                     <Outlet/>
                 </main>
-                <Footer/>
+                <div className="footer">
+                    <Footer/>
+
+                </div>
             </div>
 
         </>
