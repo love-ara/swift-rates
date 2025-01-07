@@ -1,6 +1,5 @@
 .HomePage{
-    margin: 75px auto;
-    height: 2vh;
+    margin: 0;
     /*width: 300px;*/
     text-align: center;
 }
@@ -8,7 +7,7 @@
 .HomePage-header{
     text-align: center;
     color: #464985;
-    margin: 25px auto;
+    /*margin: 0 auto;*/
 }
 
 .HomePage-content{
@@ -21,7 +20,7 @@
     /*width: 100%;*/
     width: fit-content;
     /*height: 100%;*/
-    margin: 0 auto;
+    margin: 1px auto;
 }
 
 .box{

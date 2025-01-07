@@ -1,25 +1,27 @@
-/* Full viewport height and flexbox layout */
-.layout-container {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
+/*.App {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    min-height: 100vh;*/
+/*}*/
 
-.header {
-    /* Ensure header takes full width and auto adjusts height */
-    width: 100%;
-}
+
 
 .layout-main {
-    /* This allows the main content to take up remaining space, avoiding overflow */
-    flex-grow: 1;
-    overflow: auto;
-    padding: 20px;
+    /*flex-grow: 1;*/
+    /*overflow: auto;*/
+    /*padding: 20px;*/
+    width: 100%;
+    height: 100%;
+    position: absolute;
 }
 
-.footer {
-    /* Footer takes up minimal space */
-    width: 100%;
-    padding: 10px;
-    text-align: center;
-}
+/*header {*/
+/*    width: 100%;*/
+/*}*/
+
+/*footer {*/
+/*    width: 100%;*/
+/*    padding: 10px;*/
+/*    text-align: center;*/
+/*    position: absolute;*/
+/*}*/

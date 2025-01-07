@@ -4,6 +4,7 @@ import Axios from "axios";
 import Dropdown from "react-dropdown";
 import { HiSwitchVertical } from "react-icons/hi";
 import "react-dropdown/style.css";
+import GoToPrevious from "../../components/GoToPrevious";
 
 const SingleConverter = () => {
     const [info, setInfo] = useState([]);
@@ -65,6 +66,8 @@ const SingleConverter = () => {
     };
 
     return (
+        <>
+            < GoToPrevious/>
         <div className="single_conversation">
             <div className="title-section">
                 <h1 className="title">Currency Converter</h1>
@@ -143,6 +146,7 @@ const SingleConverter = () => {
                 </p>
             </div>
         </div>
+            </>
     );
 };
 

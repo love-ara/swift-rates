@@ -7,7 +7,7 @@ const Footer = () =>{
     return (
         <>
             <div className="footer">
-                <p>&copy;{currentYear} Swift Rates. All rights reserved. </p>
+                <p>&copy;{currentYear} Swift Rates by Aramide Otenaike.<br/> All rights reserved. </p>
             </div>
         </>
     )

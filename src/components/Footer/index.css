@@ -1,9 +1,13 @@
 .footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*justify-content: left;*/
+    /*align-items: center;*/
     background: transparent;
-    /*padding: 50px 50px 50px 50px;*/
-    gap: 20%;
+    color: #464985;
+    /*gap: 20%;*/
+    bottom: 0;
+    position: fixed;
+    right: 0;
+
 }

@@ -1,11 +1,18 @@
 .navbar-container{
+    /*margin: 0;*/
+    /*display: flex;*/
     color: #32356f;
     /*padding: 20px 20px;*/
     /*position: fixed;*/
-    /*z-index: 1000;*/
-    text-align: center;
+    /*text-align: center;*/
     justify-content: center;
 
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    /*box-shadow: 0 2px 5px rgba(0,0,0,0.1); !* optional shadow *!*/
+    /*z-index: 1000;*/
 
     /*display: flex;*/
     /*justify-content: space-around;*/
